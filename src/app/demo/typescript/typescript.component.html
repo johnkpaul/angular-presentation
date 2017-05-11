@@ -148,24 +148,22 @@
   <!--  CLASSES  -->
   <slides-slide id="classes" milestone="TypeScript">
     <h1>Classes</h1>
-    <h2>TypeScript has classes, and Angular makes heavy use of them</h2>
-    <h2>They work similar to classes in other languages, and serve for grouping methods and properties belonging to
-      one object together</h2>
+    <h2>Angular makes heavy use of TypeScript classes</h2>
+    <h2>They work similarly to classes in other languages. They group together methods and properties of an object.</h2>
     <slides-playground [config]="code.classDescription.code"
                        [focus-highlight-match]="[code.classDescription.matches.classPuppyMatch]"></slides-playground>
   </slides-slide>
   <slides-slide id="classes-constructor" milestone="TypeScript">
     <h1>Classes - constructor</h1>
-    <h2>There's a special method on the class called <b>constructor</b>. It's run when the class is created and allows
-      the
-      class to take parameters</h2>
+    <h2>There's a special method on a class called <b>constructor</b>. It's run when the class is instantiated and allows
+      the class to take parameters.</h2>
     <slides-playground [config]="code.classDescription.codeConstructor"
                        [focus-highlight-match]="[code.classDescription.matches.constructorMatch,code.classDescription.matches.edouardMatch]"></slides-playground>
   </slides-slide>
 
   <slides-slide id="classes-access-modifier" milestone="TypeScript">
     <h1>Classes - Access modifiers</h1>
-    <h2>Constructor parameter marked as <b>public</b> (or private, or protected), becomes a class property
+    <h2>Constructor parameters marked as <b>public</b> (or private, or protected) become a class property
       accessible as <b>this.name</b></h2>
     <slides-playground [config]="code.classDescription.codeConstructor"
                        [focus-highlight-match]="[code.classDescription.matches.thisMatch,code.classDescription.matches.publicMatch]"></slides-playground>
