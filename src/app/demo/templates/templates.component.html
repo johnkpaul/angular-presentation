@@ -27,19 +27,18 @@
   <!--  COMPONENT -->
   <slides-slide id="component" milestone="Templates">
     <h1>Templates</h1>
-    <h2>Angular has a very expressive template system, which takes HTML as a base, and extends it with custom
-      elements</h2>
+    <h2>Angular has a very expressive template system, which looks just like HTML and adds custom elements.</h2>
     <slides-playground [config]="code.template.intro"></slides-playground>
   </slides-slide>
 
   <!--  INTERPOLATION-->
   <slides-slide id="interpolation" milestone="Templates">
     <h1>Templates - Interpolation</h1>
-    <h2>Double curlies allow you to include properties from the component</h2>
+    <h2>Double curlies include properties from the component in the output</h2>
     <slides-playground [config]="code.template.interpolation"
                        [focus-highlight-match]="[code.template.matches.curlies,code.template.matches.firstName]"></slides-playground>
     <div class="info" milestone="Templates" style="margin-top: -8px;">
-      You can use back ticks <b>` `</b> on your template to be able to use single or double quotes.
+      You can use back ticks <b>` `</b> in your template to use single or double quotes inside.
     </div>
   </slides-slide>
 
@@ -47,7 +46,7 @@
   <!--INTERPOLATION-METHOD-->
   <slides-slide id="interpolation-method" milestone="Templates">
     <h1>Templates - Interpolation</h1>
-    <h2>Simple expressions are also allowed, you can run a component method (like fullName() below), or calculate <code>323213+34234</code>
+    <h2>Simple expressions are also allowed, you can run a component method (like fullName() below).
     </h2>
     <slides-playground [config]="code.template.interpolationMethod"
                        [focus-highlight-match]="[code.template.matches.curlies,code.template.matches.fullName]"></slides-playground>
@@ -55,7 +54,7 @@
 
   <slides-slide id="exercise-pre" milestone="Templates">
     <h1>Exercise</h1>
-    <h2>In the next slide you'll edit component template to create a simple header and search form which will look like
+    <h2>In the next slide you'll edit a component template to create a simple header and search form which will look like
       this:</h2>
 
     <slides-browser-window>
@@ -76,7 +75,7 @@
   <!--  PRE DATA BINDING-->
   <slides-slide id="data-binding-pre" milestone="Templates2">
     <h1>Templates / Interpolation / Properties</h1>
-    <p>When giving a value to the element's attribute, you can use String Interpolation <b>{{ curlies }}</b></p>
+    <p>When giving a value to the element's attribute, you can use the syntax <b>{{ componentPropertyName }}</b></p>
     <slides-playground [config]="code.template.dataBindingPre"
                        [focus-highlight-match]="[code.template.matches.curliesAttribute]"></slides-playground>
   </slides-slide>
